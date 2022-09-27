@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>todos</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <section class="todos-section">
+            <h1 class="todos-section__header">
+                todos
+            </h1>
+            <div class="todos-widget todos-section__todos-widget">
+                <header class="todos-widget__header">
+                    <svg class="todos-widget__header-show-btn"></svg>
+                    <input tabindex="1" type="text" placeholder="What needs to be done?">
+                </header>
+                <ul class="todos todos-widget__todos">
+                    <li class="todos__todo">
+                        <div class="todos__todo-checkbox">
+                            <input name="todo1" type="checkbox" tabindex="2">
+                            <label for="todo1">HTML</label>
+                        </div>
+                    </li>
+                    <li class="todos__todo">
+                        <div class="todos__todo-checkbox">                 
+                            <input name="todo2" type="checkbox" tabindex="2" checked>
+                            <label for="todo2">CSS</label>
+                        </div>
+                    </li>
+                    <li class="todos__todo">
+                        <div class="todos__todo-checkbox">                            
+                            <input name="todo3" type="checkbox" tabindex="2">
+                            <label for="todo3">JS</label>
+                        </div>
+                    </li>
+                    <li class="todos__todo">
+                        <div class="todos__todo-checkbox">
+                            <input name="todo4" type="checkbox" tabindex="2">
+                            <label for="todo4">JS tools</label>
+                        </div>
+                        <svg class="todos__todo-remove-btn"></svg>
+                    </li>
+                </ul>
+                <footer class="todos-widget__footer">
+                    <div class="todos-widget__footer-section">
+                        3 items left
+                    </div>
+                    <div class="todos-widget__footer-section">
+                        <button tabindex="3" class="btn btn-active" href="#">
+                            All
+                        </button>
+                        <button tabindex="3" class="btn" href="#">
+                            Active
+                        </button>
+                        <button tabindex="3" class="btn" href="#">
+                            Completed
+                        </button>
+                    </div>
+                    <div class="todos-widget__footer-section">
+                        <button tabindex="4" class="btn">
+                            Clear completed
+                        </button>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </body>
+</html>
