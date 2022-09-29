@@ -46,18 +46,21 @@
                         3 items left
                     </div>
                     <div class="todos-widget__footer-section">
-                        <button= class="btn btn-active" href="#">
-                            All
-                        </button=>
-                        <button= class="btn" href="#">
-                            Active
-                        </button=>
-                        <button= class="btn" href="#">
-                            Completed
-                        </button=>
+                        <div class="switcher todos-widget__footer-section-switcher">
+                            <input id="todos-widget-state-all" type="radio" name="todos-widget-state" value="All">
+                            <label for="todos-widget-state-all">All</label>
+                        </div>
+                        <div class="switcher todos-widget__footer-section-switcher">
+                            <input id="todos-widget-state-active" type="radio" name="todos-widget-state" value="Active">
+                            <label for="todos-widget-state-active">Active</label>
+                        </div>
+                        <div class="switcher todos-widget__footer-section-switcher">
+                            <input id="todos-widget-state-completed" type="radio" name="todos-widget-state" value="Completed">
+                            <label for="todos-widget-state-completed">Completed</label>
+                        </div>
                     </div>
                     <div class="todos-widget__footer-section">
-                        <button class="btn">
+                        <button class="btn btn-clear">
                             Clear completed
                         </button>
                     </div>
