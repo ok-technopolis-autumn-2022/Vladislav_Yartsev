@@ -11,7 +11,9 @@
             </h1>
             <div class="todos-widget todos-section__todos-widget">
                 <header class="todos-widget__header">
-                    <svg class="todos-widget__header-show-btn"></svg>
+                    <button class="btn btn-add todos-widget-btn_action_add">
+                        <svg></svg>
+                    </button>
                     <input type="text" placeholder="What needs to be done?">
                 </header>
                 <ul class="todos todos-widget__todos">
@@ -38,7 +40,9 @@
                             <input name="todo4" id="todo4" type="checkbox">
                             <label for="todo4">JS tools</label>
                         </div>
-                        <svg class="todos__todo-remove-btn"></svg>
+                        <button class="btn btn-remove todos__todo-btn_action_remove">
+                            <svg></svg>
+                        </button>
                     </li>
                 </ul>
                 <footer class="todos-widget__footer">
@@ -60,7 +64,7 @@
                         </div>
                     </div>
                     <div class="todos-widget__footer-section">
-                        <button class="btn btn-clear">
+                        <button class="btn btn-clear todos-widget-btn_action_clear">
                             Clear completed
                         </button>
                     </div>
