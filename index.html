@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>todos</title>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
     </head>
     <body>
         <section class="todos-section">
@@ -11,35 +11,35 @@
             </h1>
             <div class="todos-widget todos-section__todos-widget">
                 <header class="todos-widget__header">
-                    <button class="btn btn-add todos-widget-btn_action_add">
+                    <button class="btn btn-select-all todos-widget-btn_action_select-all">
                         <svg></svg>
                     </button>
                     <input type="text" placeholder="What needs to be done?">
                 </header>
                 <ul class="todos todos-widget__todos">
                     <li class="todos__todo">
-                        <div class="todos__todo-checkbox">
-                            <input name="todo1" id="todo1" type="checkbox">
-                            <label for="todo1">HTML</label>
-                        </div>
+                        <label class="todos__todo-checkbox">
+                            <input name="todo1" type="checkbox">
+                            HTML
+                        </label>
                     </li>
                     <li class="todos__todo">
-                        <div class="todos__todo-checkbox">                 
-                            <input name="todo2" id="todo2" type="checkbox" checked>
-                            <label for="todo2">CSS</label>
-                        </div>
+                        <label class="todos__todo-checkbox">                 
+                            <input name="todo2" type="checkbox" checked>
+                            CSS
+                        </label>
                     </li>
                     <li class="todos__todo">
-                        <div class="todos__todo-checkbox">                            
-                            <input name="todo3" id="todo3" type="checkbox">
-                            <label for="todo3">JS</label>
-                        </div>
+                        <label class="todos__todo-checkbox">                            
+                            <input name="todo3" type="checkbox">
+                            JS
+                        </label>
                     </li>
                     <li class="todos__todo">
-                        <div class="todos__todo-checkbox">
-                            <input name="todo4" id="todo4" type="checkbox">
-                            <label for="todo4">JS tools</label>
-                        </div>
+                        <label class="todos__todo-checkbox">
+                            <input name="todo4" type="checkbox">
+                            JS tools
+                        </label>
                         <button class="btn btn-remove todos__todo-btn_action_remove">
                             <svg></svg>
                         </button>
@@ -51,16 +51,22 @@
                     </div>
                     <div class="todos-widget__footer-section">
                         <div class="switcher todos-widget__footer-section-switcher">
-                            <input id="todos-widget-state-all" type="radio" name="todos-widget-state" value="All">
-                            <label for="todos-widget-state-all">All</label>
+                            <label>
+                                <input type="radio" name="todos-widget-state" value="All">
+                                All
+                            </label>
                         </div>
                         <div class="switcher todos-widget__footer-section-switcher">
-                            <input id="todos-widget-state-active" type="radio" name="todos-widget-state" value="Active">
-                            <label for="todos-widget-state-active">Active</label>
+                            <label>
+                                <input type="radio" name="todos-widget-state" value="Active">
+                                Active
+                            </label>
                         </div>
                         <div class="switcher todos-widget__footer-section-switcher">
-                            <input id="todos-widget-state-completed" type="radio" name="todos-widget-state" value="Completed">
-                            <label for="todos-widget-state-completed">Completed</label>
+                            <label>
+                                <input type="radio" name="todos-widget-state" value="Completed">
+                                Completed
+                            </label>
                         </div>
                     </div>
                     <div class="todos-widget__footer-section">
