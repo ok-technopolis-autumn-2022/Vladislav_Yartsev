@@ -62,11 +62,15 @@
                     >
                         3 items left
                     </div>
-                    <div class="todos-widget__footer-section" role="radiogroup">
+                    <div
+                        class="todos-widget__footer-section"
+                        role="radiogroup"
+                        aria-label="Switch todos type"
+                    >
                         <label class="switcher todos-widget__footer-section-switcher">
                             <input
                                 type="radio"
-                                name="todos-widget-state"
+                                name="todos-type"
                                 value="All"
                                 aria-label="Show all todos"
                             >
@@ -75,7 +79,7 @@
                         <label class="switcher todos-widget__footer-section-switcher">
                             <input
                                 type="radio"
-                                name="todos-widget-state"
+                                name="todos-type"
                                 value="Active"
                                 aria-label="Show active todos"
                             >
@@ -84,7 +88,7 @@
                         <label class="switcher todos-widget__footer-section-switcher">
                             <input
                                 type="radio"
-                                name="todos-widget-state"
+                                name="todos-type"
                                 value="Completed"
                                 aria-label="Show completed todos"
                             >
