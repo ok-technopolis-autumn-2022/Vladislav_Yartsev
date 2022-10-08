@@ -19,6 +19,7 @@
                     </button>
                     <input
                         type="text"
+                        name="newTodoText"
                         placeholder="What needs to be done?"
                         aria-label="Add todo"
                     >
@@ -26,25 +27,25 @@
                 <ul class="todos todos-widget__todos">
                     <li class="todos__todo">
                         <label class="todos__todo-checkbox">
-                            <input name="todo1" type="checkbox" aria-label="Select todo">
+                            <input name="todo1Selected" type="checkbox" aria-label="Select todo">
                             HTML
                         </label>
                     </li>
                     <li class="todos__todo">
                         <label class="todos__todo-checkbox">                 
-                            <input name="todo2" type="checkbox" aria-label="Select todo" checked>
+                            <input name="todo2Selected" type="checkbox" aria-label="Select todo" checked>
                             CSS
                         </label>
                     </li>
                     <li class="todos__todo">
                         <label class="todos__todo-checkbox">                            
-                            <input name="todo3" aria-label="Select todo" type="checkbox">
+                            <input name="todo3Selected" aria-label="Select todo" type="checkbox">
                             JS
                         </label>
                     </li>
                     <li class="todos__todo">
                         <label class="todos__todo-checkbox">
-                            <input name="todo4" aria-label="Select todo" type="checkbox">
+                            <input name="todo4Selected" aria-label="Select todo" type="checkbox">
                             JS tools
                         </label>
                         <button
@@ -70,7 +71,7 @@
                         <label class="switcher todos-widget__footer-section-switcher">
                             <input
                                 type="radio"
-                                name="todos-type"
+                                name="todosType"
                                 value="All"
                                 aria-label="Show all todos"
                             >
@@ -79,7 +80,7 @@
                         <label class="switcher todos-widget__footer-section-switcher">
                             <input
                                 type="radio"
-                                name="todos-type"
+                                name="todosType"
                                 value="Active"
                                 aria-label="Show active todos"
                             >
@@ -88,7 +89,7 @@
                         <label class="switcher todos-widget__footer-section-switcher">
                             <input
                                 type="radio"
-                                name="todos-type"
+                                name="todosType"
                                 value="Completed"
                                 aria-label="Show completed todos"
                             >
