@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>todos</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <section class="todos-section">
+            <h1 class="todos-section__header">
+                todos
+            </h1>
+            <div class="todos-widget todos-section__todos-widget" role="widget">
+                <header class="todos-widget__header">
+                    <button
+                        class="btn todos-widget-btn_action_select-all"
+                        title="Select all todos"
+                    >
+                        <svg></svg>
+                    </button>
+                    <input
+                        type="text"
+                        name="newTodoText"
+                        placeholder="What needs to be done?"
+                        aria-label="Add todo"
+                    >
+                </header>
+                <ul class="todos todos-widget__todos">
+                    <li class="todos__todo">
+                        <label class="todos__todo-checkbox">
+                            <input name="todo1Selected" type="checkbox" aria-label="Select todo">
+                            HTML
+                        </label>
+                    </li>
+                    <li class="todos__todo">
+                        <label class="todos__todo-checkbox">                 
+                            <input name="todo2Selected" type="checkbox" aria-label="Select todo" checked>
+                            CSS
+                        </label>
+                    </li>
+                    <li class="todos__todo">
+                        <label class="todos__todo-checkbox">                            
+                            <input name="todo3Selected" aria-label="Select todo" type="checkbox">
+                            JS
+                        </label>
+                    </li>
+                    <li class="todos__todo">
+                        <label class="todos__todo-checkbox">
+                            <input name="todo4Selected" aria-label="Select todo" type="checkbox">
+                            JS tools
+                        </label>
+                        <button
+                            class="btn todos__todo-btn_action_remove"
+                            title="Remove todo"
+                        >
+                            <svg></svg>
+                        </button>
+                    </li>
+                </ul>
+                <footer class="todos-widget__footer">
+                    <div
+                        class="todos-widget__footer-section"
+                        role="note"
+                    >
+                        3 items left
+                    </div>
+                    <div
+                        class="todos-widget__footer-section"
+                        role="radiogroup"
+                        aria-label="Switch todos type"
+                    >
+                        <label class="switcher todos-widget__footer-section-switcher">
+                            <input
+                                type="radio"
+                                name="todosType"
+                                value="All"
+                                aria-label="Show all todos"
+                            >
+                            All
+                        </label>
+                        <label class="switcher todos-widget__footer-section-switcher">
+                            <input
+                                type="radio"
+                                name="todosType"
+                                value="Active"
+                                aria-label="Show active todos"
+                            >
+                            Active
+                        </label>
+                        <label class="switcher todos-widget__footer-section-switcher">
+                            <input
+                                type="radio"
+                                name="todosType"
+                                value="Completed"
+                                aria-label="Show completed todos"
+                            >
+                            Completed
+                        </label>
+                    </div>
+                    <button
+                        class="btn todos-widget-btn_action_clear todos-widget__footer-section"
+                        aria-label="Clear completed todos"
+                    >
+                        Clear completed
+                    </button>
+                </footer>
+            </div>
+        </section>
+    </body>
+</html>
