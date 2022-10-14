@@ -5,6 +5,7 @@
     --shading-text-color: #CCCCCC;
     --color-on-hover: #FAFAFA;
     --checkbox-size: 40px;
+    --default-transition-time: 0.2s;
 }
 
 * {

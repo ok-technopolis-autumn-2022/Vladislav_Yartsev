@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="common.blocks/todos-widget/__header/todos-widget__header.css">
         <link rel="stylesheet" href="common.blocks/todos/todos.css">
         <link rel="stylesheet" href="common.blocks/todos/__todo-checkbox/todos__todo-checkbox.css">
+        <link rel="stylesheet" href="common.blocks/todos/__todo/todos__todo.css">
     </head>
     <body>
         <section class="todos-section">
@@ -40,28 +41,28 @@
                 </header>
                 <ul class="todos todos-widget__todos">
                     <li class="todos__todo">
-                        <label class="todos__todo-checkbox">
-                            <input name="todo1Selected" type="checkbox" aria-label="Select todo">
-                            HTML
-                        </label>
+                        <div class="todos__todo-checkbox">
+                            <input id="todo1" name="todo1Selected" type="checkbox" aria-label="Select todo">
+                            <label for="todo1">HTML</label>
+                        </div>
                     </li>
                     <li class="todos__todo">
-                        <label class="todos__todo-checkbox">                 
-                            <input name="todo2Selected" type="checkbox" aria-label="Select todo" checked>
-                            CSS
-                        </label>
+                        <div class="todos__todo-checkbox">                 
+                            <input id="todo2" name="todo2Selected" type="checkbox" aria-label="Select todo" checked>
+                            <label for="todo2">CSS</label>
+                        </div>
                     </li>
                     <li class="todos__todo">
-                        <label class="todos__todo-checkbox">                            
-                            <input name="todo3Selected" aria-label="Select todo" type="checkbox">
-                            JS
-                        </label>
+                        <div class="todos__todo-checkbox">                            
+                            <input id="todo3" name="todo3Selected" aria-label="Select todo" type="checkbox">
+                            <label for="todo3">JS</label>
+                        </div>
                     </li>
                     <li class="todos__todo">
-                        <label class="todos__todo-checkbox">
-                            <input name="todo4Selected" aria-label="Select todo" type="checkbox">
-                            JS tools
-                        </label>
+                        <div class="todos__todo-checkbox">
+                            <input id="todo4" name="todo4Selected" aria-label="Select todo" type="checkbox">
+                            <label for="todo4">JS tools</label>
+                        </div>
                         <button
                             class="btn todos__todo-btn_action_remove"
                             title="Remove todo"

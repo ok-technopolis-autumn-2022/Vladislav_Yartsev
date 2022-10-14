@@ -1,0 +1,6 @@
+.todos__todo {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    border-bottom: 2px solid var(--shading-color) ;
+}
