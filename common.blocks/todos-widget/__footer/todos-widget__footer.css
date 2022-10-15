@@ -2,4 +2,7 @@
     align-content: flex-end;
     display: flex;
     justify-content: space-between;
+    padding: 15px;
+    border-top: 2px solid var(--shading-color);
+    font-size: 14px;
 }

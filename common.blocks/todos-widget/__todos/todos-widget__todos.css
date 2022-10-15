@@ -1,3 +1,4 @@
 .todos-widget__todos {
     flex: 1;
+    overflow-y: scroll;
 }
