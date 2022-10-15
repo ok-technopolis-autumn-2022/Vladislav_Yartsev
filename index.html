@@ -15,6 +15,8 @@
         <link rel="stylesheet" href="common.blocks/todos/__todo/todos__todo.css">
         <link rel="stylesheet" href="common.blocks/todos-widget/__footer/todos-widget__footer.css">
         <link rel="stylesheet" href="common.blocks/todos-widget/__todos/todos-widget__todos.css">
+        <link rel="stylesheet" href="common.blocks/switcher/switcher.css">
+        <link rel="stylesheet" href="common.blocks/todos-widget/__footer-section-switcher/todos-widget__footer-section-switcher.css">
     </head>
     <body>
         <section class="todos-section">
@@ -115,33 +117,36 @@
                         role="radiogroup"
                         aria-label="Switch todos type"
                     >
-                        <label class="switcher todos-widget__footer-section-switcher">
+                        <span class="switcher todos-widget__footer-section-switcher">
                             <input
+                                id="todosType_All"
                                 type="radio"
                                 name="todosType"
                                 value="All"
                                 aria-label="Show all todos"
                             >
-                            All
-                        </label>
-                        <label class="switcher todos-widget__footer-section-switcher">
+                            <label for="todosType_All">All</label>
+                        </span>
+                        <span class="switcher todos-widget__footer-section-switcher">
                             <input
+                                id="todosType_Active"
                                 type="radio"
                                 name="todosType"
                                 value="Active"
                                 aria-label="Show active todos"
                             >
-                            Active
-                        </label>
-                        <label class="switcher todos-widget__footer-section-switcher">
+                            <label for="todosType_Active">Active</label>
+                        </span>
+                        <span class="switcher todos-widget__footer-section-switcher">
                             <input
+                                id="todosType_Completed"
                                 type="radio"
                                 name="todosType"
                                 value="Completed"
                                 aria-label="Show completed todos"
                             >
-                            Completed
-                        </label>
+                            <label for="todosType_Completed">Completed</label>
+                        </span>
                     </div>
                     <button
                         class="btn todos-widget-btn_action_clear todos-widget__footer-section"

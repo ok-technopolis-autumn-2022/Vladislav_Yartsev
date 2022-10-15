@@ -6,6 +6,7 @@
     --color-on-hover: #FAFAFA;
     --checkbox-size: 40px;
     --default-transition-time: 0.2s;
+    --footer-text-color: #888888;
 }
 
 * {
@@ -24,4 +25,8 @@
 
 body {
     background-color: var(--shading-color);
+}
+
+button {
+    color: inherit;
 }
