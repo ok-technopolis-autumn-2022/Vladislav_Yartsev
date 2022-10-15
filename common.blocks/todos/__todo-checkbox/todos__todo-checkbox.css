@@ -18,6 +18,11 @@
     transition: var(--default-transition-time) background;
 }
 
+.todos__todo-checkbox input[type="checkbox"]:checked + label {
+    color: var(--shading-text-color);
+    text-decoration: line-through;
+}
+
 .todos__todo-checkbox input[type="checkbox"]:checked + label::before {
     background-image: url('checked.svg');
 }
