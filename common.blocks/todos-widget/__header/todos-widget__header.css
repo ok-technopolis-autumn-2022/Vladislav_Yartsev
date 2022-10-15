@@ -1,4 +1,5 @@
 .todos-widget__header {
+    align-content: flex-start;
     border-bottom: 2px solid var(--shading-color);
     padding: 20px 17px;
     display: flex;
