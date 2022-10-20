@@ -5,3 +5,15 @@
     display: flex;
     align-items: center;
 }
+
+.todos-widget__header input {
+    border: none;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: -0.6px;
+}
+
+.todos-widget__header input::placeholder {
+    color: var(--shading-text-color);
+}
