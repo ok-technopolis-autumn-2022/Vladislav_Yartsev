@@ -1,7 +1,6 @@
 .todos-widget__header {
     align-content: flex-start;
     border-bottom: 2px solid var(--shading-color);
-    padding: 20px 17px;
     display: flex;
     align-items: center;
 }
@@ -12,6 +11,8 @@
     font-weight: 300;
     font-style: italic;
     letter-spacing: -0.6px;
+    padding: 20px 0;
+    width: 100%;
 }
 
 .todos-widget__header input::placeholder {
