@@ -1,0 +1,5 @@
+.todos__todo-btn_action_remove {
+    background: url('remove.svg') no-repeat center center;
+    width: var(--default-icon-size);
+    height: var(--default-icon-size);
+}

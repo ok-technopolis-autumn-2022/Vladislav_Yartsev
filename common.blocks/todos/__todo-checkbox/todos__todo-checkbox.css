@@ -11,8 +11,8 @@
 
 .todos__todo-checkbox input[type="checkbox"] + label::before {
     content: '';
-    width: var(--checkbox-size);
-    height: var(--checkbox-size);
+    width: var(--default-icon-size);
+    height: var(--default-icon-size);
     background-image: url('unchecked.svg');
     background-repeat: no-repeat;
     transition: var(--default-transition-time) background;

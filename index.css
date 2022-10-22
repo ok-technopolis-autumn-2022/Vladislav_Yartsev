@@ -4,7 +4,7 @@
     --shading-color: #F2F2F2;
     --shading-text-color: #CCCCCC;
     --color-on-hover: #FAFAFA;
-    --checkbox-size: 40px;
+    --default-icon-size: 40px;
     --default-transition-time: 0.2s;
     --footer-text-color: #888888;
 }
