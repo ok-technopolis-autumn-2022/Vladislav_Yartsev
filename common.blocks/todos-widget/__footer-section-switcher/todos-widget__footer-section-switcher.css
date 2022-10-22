@@ -6,6 +6,5 @@
 }
 
 .todos-widget__footer-section-switcher input:checked + label {
-    box-sizing: content-box;
     border-color: var(--shading-color);
 }
