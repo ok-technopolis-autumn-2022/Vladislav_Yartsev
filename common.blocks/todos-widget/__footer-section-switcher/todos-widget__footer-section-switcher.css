@@ -2,8 +2,10 @@
     border-radius: 5px;
     padding: 4px;
     margin: 0 7px;
+    border: 2px solid transparent;
 }
 
 .todos-widget__footer-section-switcher input:checked + label {
-    outline: 2px solid var(--shading-color);
+    box-sizing: content-box;
+    border-color: var(--shading-color);
 }
