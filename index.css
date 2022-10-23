@@ -7,6 +7,7 @@
     --default-icon-size: 40px;
     --default-transition-time: 0.2s;
     --footer-text-color: #888888;
+    --default-focus-outline: 2px solid #000000;
 }
 
 * {
@@ -19,8 +20,8 @@
     padding: 0;
 }
 
-:active, :focus {
-    outline: none;
+:focus {
+    outline: var(--default-focus-outline);
 }
 
 body {

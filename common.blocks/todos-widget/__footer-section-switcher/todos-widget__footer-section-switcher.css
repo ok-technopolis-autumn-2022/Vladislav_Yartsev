@@ -8,3 +8,7 @@
 .todos-widget__footer-section-switcher input:checked + label {
     border-color: var(--shading-color);
 }
+
+.todos-widget__footer-section-switcher input:focus + label {
+    outline: var(--default-focus-outline);
+}
