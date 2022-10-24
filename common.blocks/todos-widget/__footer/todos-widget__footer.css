@@ -1,5 +1,4 @@
 .todos-widget__footer {
-    align-content: flex-end;
     display: flex;
     justify-content: space-between;
     padding: 15px;

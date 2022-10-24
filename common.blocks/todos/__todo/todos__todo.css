@@ -16,9 +16,10 @@
 }
 
 .todos__todo:not(:hover) button {
-    position: absolute;
-    z-index: -1;
+    transition: opacity var(--default-transition-time);
     opacity: 0;
-    top: 0;
-    left: 0;
+}
+
+.todos__todo:not(:hover) button:focus {
+    opacity: 1;
 }
