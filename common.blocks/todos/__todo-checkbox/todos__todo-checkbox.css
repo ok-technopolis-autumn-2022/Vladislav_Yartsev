@@ -1,25 +1,12 @@
 .todos__todo-checkbox {
+    display: flex;
+    align-items: center;
     font-size: 24px;
     font-weight: 300;
 }
 
 .todos__todo-checkbox input[type="checkbox"] + label {
-    cursor: pointer; /* maybe should be removed */
-    display: flex;
-    align-items: center;
-}
-
-.todos__todo-checkbox input[type="checkbox"] + label::before {
-    content: '';
-    margin-right: 15px;
-    width: var(--default-icon-size);
-    height: var(--default-icon-size);
-    background: url('unchecked.svg') no-repeat center center;
-    transition: var(--default-transition-time) background;
-}
-
-.todos__todo-checkbox input[type="checkbox"]:focus + label::before {
-    outline: var(--default-focus-outline);
+    cursor: pointer;
 }
 
 .todos__todo-checkbox input[type="checkbox"]:checked + label {
@@ -27,14 +14,15 @@
     text-decoration: line-through;
 }
 
-.todos__todo-checkbox input[type="checkbox"]:checked + label::before {
-    background-image: url('checked.svg');
+.todos__todo-checkbox input[type="checkbox"] {
+    appearance: none;
+    margin-right: 15px;
+    width: var(--default-icon-size);
+    height: var(--default-icon-size);
+    background: url('unchecked.svg') no-repeat center center;
+    transition: var(--default-transition-time) background;
 }
 
-.todos__todo-checkbox input[type="checkbox"] {
-    z-index: -1;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
+.todos__todo-checkbox input[type="checkbox"]:checked {
+    background-image: url('checked.svg');
 }
