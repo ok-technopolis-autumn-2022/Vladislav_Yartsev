@@ -7,6 +7,10 @@
     transition: var(--default-transition-time) background;
 }
 
+.todos__todo:last-child {
+    border-bottom: none;
+}
+
 .todos__todo:hover {
     background-color: var(--color-on-hover);
 }
@@ -15,4 +19,6 @@
     position: absolute;
     z-index: -1;
     opacity: 0;
+    top: 0;
+    left: 0;
 }
