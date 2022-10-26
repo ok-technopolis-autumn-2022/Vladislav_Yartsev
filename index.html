@@ -3,6 +3,22 @@
     <head>
         <title>todos</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="common.blocks/todos-section/todos-section.css">
+        <link rel="stylesheet" href="common.blocks/todos-section/__header/todos-section__header.css">
+        <link rel="stylesheet" href="common.blocks/todos-widget/todos-widget.css">
+        <link rel="stylesheet" href="common.blocks/todos-section/__todos-widget/todos-section__todos-widget.css">
+        <link rel="stylesheet" href="common.blocks/btn/btn.css">
+        <link rel="stylesheet" href="common.blocks/todos-widget/__header/todos-widget__header.css">
+        <link rel="stylesheet" href="common.blocks/todos/todos.css">
+        <link rel="stylesheet" href="common.blocks/todos/__todo-checkbox/todos__todo-checkbox.css">
+        <link rel="stylesheet" href="common.blocks/todos/__todo/todos__todo.css">
+        <link rel="stylesheet" href="common.blocks/todos-widget/__footer/todos-widget__footer.css">
+        <link rel="stylesheet" href="common.blocks/todos-widget/__todos/todos-widget__todos.css">
+        <link rel="stylesheet" href="common.blocks/switcher/switcher.css">
+        <link rel="stylesheet" href="common.blocks/todos-widget/__footer-section-switcher/todos-widget__footer-section-switcher.css">
+        <link rel="stylesheet" href="common.blocks/todos-widget-btn/_action/todos-widget-btn_action_select-all.css">
+        <link rel="stylesheet" href="common.blocks/todos/__todo-btn/_action/todos__todo-btn_action_remove.css">
     </head>
     <body>
         <section class="todos-section">
@@ -14,9 +30,7 @@
                     <button
                         class="btn todos-widget-btn_action_select-all"
                         title="Select all todos"
-                    >
-                        <svg></svg>
-                    </button>
+                    ></button>
                     <input
                         type="text"
                         name="newTodoText"
@@ -26,34 +40,44 @@
                 </header>
                 <ul class="todos todos-widget__todos">
                     <li class="todos__todo">
-                        <label class="todos__todo-checkbox">
-                            <input name="todo1Selected" type="checkbox" aria-label="Select todo">
-                            HTML
-                        </label>
-                    </li>
-                    <li class="todos__todo">
-                        <label class="todos__todo-checkbox">                 
-                            <input name="todo2Selected" type="checkbox" aria-label="Select todo" checked>
-                            CSS
-                        </label>
-                    </li>
-                    <li class="todos__todo">
-                        <label class="todos__todo-checkbox">                            
-                            <input name="todo3Selected" aria-label="Select todo" type="checkbox">
-                            JS
-                        </label>
-                    </li>
-                    <li class="todos__todo">
-                        <label class="todos__todo-checkbox">
-                            <input name="todo4Selected" aria-label="Select todo" type="checkbox">
-                            JS tools
-                        </label>
+                        <div class="todos__todo-checkbox">
+                            <input id="todo1" name="todo1Selected" type="checkbox" aria-label="Select todo">
+                            <label for="todo1">HTML</label>
+                        </div>
                         <button
                             class="btn todos__todo-btn_action_remove"
                             title="Remove todo"
-                        >
-                            <svg></svg>
-                        </button>
+                        ></button>
+                    </li>
+                    <li class="todos__todo">
+                        <div class="todos__todo-checkbox">                 
+                            <input id="todo2" name="todo2Selected" type="checkbox" aria-label="Select todo" checked>
+                            <label for="todo2">CSS</label>
+                        </div>
+                        <button
+                            class="btn todos__todo-btn_action_remove"
+                            title="Remove todo"
+                        ></button>
+                    </li>
+                    <li class="todos__todo">
+                        <div class="todos__todo-checkbox">                            
+                            <input id="todo3" name="todo3Selected" aria-label="Select todo" type="checkbox">
+                            <label for="todo3">JS</label>
+                        </div>
+                        <button
+                            class="btn todos__todo-btn_action_remove"
+                            title="Remove todo"
+                        ></button>
+                    </li>
+                    <li class="todos__todo">
+                        <div class="todos__todo-checkbox">
+                            <input id="todo4" name="todo4Selected" aria-label="Select todo" type="checkbox">
+                            <label for="todo4">JS tools</label>
+                        </div>
+                        <button
+                            class="btn todos__todo-btn_action_remove"
+                            title="Remove todo"
+                        ></button>
                     </li>
                 </ul>
                 <footer class="todos-widget__footer">
@@ -68,33 +92,37 @@
                         role="radiogroup"
                         aria-label="Switch todos type"
                     >
-                        <label class="switcher todos-widget__footer-section-switcher">
+                        <span class="switcher todos-widget__footer-section-switcher">
                             <input
+                                id="todosType_All"
                                 type="radio"
                                 name="todosType"
                                 value="All"
                                 aria-label="Show all todos"
+                                checked
                             >
-                            All
-                        </label>
-                        <label class="switcher todos-widget__footer-section-switcher">
+                            <label for="todosType_All">All</label>
+                        </span>
+                        <span class="switcher todos-widget__footer-section-switcher">
                             <input
+                                id="todosType_Active"
                                 type="radio"
                                 name="todosType"
                                 value="Active"
                                 aria-label="Show active todos"
                             >
-                            Active
-                        </label>
-                        <label class="switcher todos-widget__footer-section-switcher">
+                            <label for="todosType_Active">Active</label>
+                        </span>
+                        <span class="switcher todos-widget__footer-section-switcher">
                             <input
+                                id="todosType_Completed"
                                 type="radio"
                                 name="todosType"
                                 value="Completed"
                                 aria-label="Show completed todos"
                             >
-                            Completed
-                        </label>
+                            <label for="todosType_Completed">Completed</label>
+                        </span>
                     </div>
                     <button
                         class="btn todos-widget-btn_action_clear todos-widget__footer-section"

@@ -1,0 +1,9 @@
+.switcher input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.switcher label {
+    cursor: pointer;
+}

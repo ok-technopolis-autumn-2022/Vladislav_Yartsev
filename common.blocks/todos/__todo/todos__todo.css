@@ -1,0 +1,25 @@
+.todos__todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    border-bottom: 2px solid var(--shading-color);
+    transition: var(--default-transition-time) background;
+}
+
+.todos__todo:last-child {
+    border-bottom: none;
+}
+
+.todos__todo:hover {
+    background-color: var(--color-on-hover);
+}
+
+.todos__todo:not(:hover) button {
+    transition: opacity var(--default-transition-time);
+    opacity: 0;
+}
+
+.todos__todo:not(:hover) button:focus {
+    opacity: 1;
+}
