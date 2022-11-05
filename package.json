@@ -1,0 +1,22 @@
+{
+  "name": "todo_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch . --no-source-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ok-technopolis-autumn-2022/Vladislav_Yartsev.git"
+  },
+  "author": "StombieIT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ok-technopolis-autumn-2022/Vladislav_Yartsev/issues"
+  },
+  "homepage": "https://github.com/ok-technopolis-autumn-2022/Vladislav_Yartsev#readme",
+  "dependencies": {
+    "sass": "^1.56.0"
+  }
+}
