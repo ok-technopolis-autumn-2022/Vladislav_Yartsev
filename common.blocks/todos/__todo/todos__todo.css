@@ -1,25 +1,21 @@
 .todos__todo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 10px;
-    border-bottom: 2px solid var(--shading-color);
-    transition: var(--default-transition-time) background;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px;
+  border-bottom: 2px solid #F2F2F2;
+  transition: 0.2s background;
 }
-
 .todos__todo:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
-
 .todos__todo:hover {
-    background-color: var(--color-on-hover);
+  background-color: #FAFAFA;
 }
-
 .todos__todo:not(:hover) button {
-    transition: opacity var(--default-transition-time);
-    opacity: 0;
+  transition: opacity 0.2s;
+  opacity: 0;
 }
-
 .todos__todo:not(:hover) button:focus {
-    opacity: 1;
+  opacity: 1;
 }

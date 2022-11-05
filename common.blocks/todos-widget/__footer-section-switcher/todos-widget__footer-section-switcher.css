@@ -1,14 +1,12 @@
 .todos-widget__footer-section-switcher label {
-    border-radius: 5px;
-    padding: 4px;
-    margin: 0 7px;
-    border: 2px solid transparent;
+  border-radius: 5px;
+  padding: 4px;
+  margin: 0 7px;
+  border: 2px solid transparent;
 }
-
 .todos-widget__footer-section-switcher input:checked + label {
-    border-color: var(--shading-color);
+  border-color: #F2F2F2;
 }
-
 .todos-widget__footer-section-switcher input:focus + label {
-    outline: var(--default-focus-outline);
+  outline: 2px solid #000000;
 }

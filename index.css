@@ -1,33 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
-
-:root {
-    --shading-color: #F2F2F2;
-    --shading-text-color: #CCCCCC;
-    --color-on-hover: #FAFAFA;
-    --default-icon-size: 40px;
-    --default-transition-time: 0.2s;
-    --footer-text-color: #888888;
-    --default-focus-outline: 2px solid #000000;
-}
-
 * {
-    font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 *, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :focus {
-    outline: var(--default-focus-outline);
+  outline: 2px solid #000000;
 }
 
 body {
-    background-color: var(--shading-color);
+  background-color: #F2F2F2;
 }
 
 button {
-    color: inherit;
+  color: inherit;
 }

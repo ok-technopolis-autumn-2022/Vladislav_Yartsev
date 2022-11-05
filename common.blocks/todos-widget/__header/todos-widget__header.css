@@ -1,19 +1,17 @@
 .todos-widget__header {
-    border-bottom: 2px solid var(--shading-color);
-    display: flex;
-    align-items: center;
+  border-bottom: 2px solid #F2F2F2;
+  display: flex;
+  align-items: center;
 }
-
 .todos-widget__header input {
-    border: none;
-    font-size: 24px;
-    font-weight: 300;
-    font-style: italic;
-    letter-spacing: -0.6px;
-    padding: 20px 0;
-    width: 100%;
+  border: none;
+  font-size: 24px;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: -0.6px;
+  padding: 20px 0;
+  width: 100%;
 }
-
 .todos-widget__header input::placeholder {
-    color: var(--shading-text-color);
+  color: #CCCCCC;
 }

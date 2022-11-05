@@ -1,0 +1,21 @@
+@use "../../../constants" as *;
+
+.todos-widget__header {
+    border-bottom: 2px solid $shading-color;
+    display: flex;
+    align-items: center;
+
+    & input {
+        border: none;
+        font-size: 24px;
+        font-weight: 300;
+        font-style: italic;
+        letter-spacing: -0.6px;
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    & input::placeholder {
+        color: $shading-text-color;
+    }
+}
