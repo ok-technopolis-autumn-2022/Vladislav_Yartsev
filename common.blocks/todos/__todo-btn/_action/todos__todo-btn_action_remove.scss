@@ -1,7 +1,7 @@
 @use "../../../../constants" as *;
 
 .todos__todo-btn_action_remove {
-    background: url('remove.svg') no-repeat center center;
-    width: $default-icon-size;
-    height: $default-icon-size;
+  background: url("remove.svg") no-repeat center center;
+  width: $default-icon-size;
+  height: $default-icon-size;
 }
