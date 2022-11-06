@@ -1,0 +1,19 @@
+@use "../../../constants" as *;
+
+.todos-widget__footer-section-switcher {  
+
+  & label {
+    border-radius: 5px;
+    padding: 4px;
+    margin: 0 7px;
+    border: 2px solid transparent;
+  }
+
+  & input:checked + label {
+    border-color: $shading-color;
+  }
+
+  & input:focus + label {
+    outline: $default-focus-outline;
+  }
+}

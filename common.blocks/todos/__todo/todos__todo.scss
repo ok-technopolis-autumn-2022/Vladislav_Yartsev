@@ -1,0 +1,27 @@
+@use "../../../constants" as *;
+
+.todos__todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px;
+  border-bottom: 2px solid $shading-color;
+  transition: $default-transition-time background;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:hover {
+    background-color: $color-on-hover;
+  }
+
+  &:not(:hover) button {
+    transition: opacity $default-transition-time;
+    opacity: 0;
+  }
+
+  &:not(:hover) button:focus {
+    opacity: 1;
+  }
+}
