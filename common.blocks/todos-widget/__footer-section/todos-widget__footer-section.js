@@ -1,0 +1,1 @@
+export const todosWidgetFooterSection = document.querySelector(".todos-widget__footer-section")
