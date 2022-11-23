@@ -1,9 +1,9 @@
 import { store } from "../../../store"
 import { migrate } from "../../todos-widget/todos-widget";
 
-const todosWidgetBtnActionSelectAll = document.querySelector(".todos-widget-btn_action_clear")
+export const todosWidgetBtnActionSelectAll = document.querySelector(".todos-widget-btn_action_select-all")
 
 todosWidgetBtnActionSelectAll.addEventListener("click", evt => {
-    store.removeAll(todo => todo.isActive)
+    store.forEachTodo(todo => todo.isActive = false)
     migrate(store)
 })

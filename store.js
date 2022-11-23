@@ -60,6 +60,10 @@ export class Store {
         return this._todos.filter(todo => todo.isActive).length
     }
 
+    forEachTodo(consumer) {
+        this._todos.forEach(consumer)
+    }
+
     get suitableTodos() {
         switch (this._todosType) {
             case Store.TodosType.ALL:
