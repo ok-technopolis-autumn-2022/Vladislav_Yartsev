@@ -10,9 +10,7 @@ export class Store {
 
     constructor({todosType, todos} = {}) {
         if (todosType) {
-            if (!Store.validateTodosType(todosType)) {
-                throw new Error(`Todos type '${todosType}' is invalid`)
-            }
+            Store.checkTodosType(todosType)
             this.todosType = todosType
         }
         if (todos) {
@@ -20,12 +18,16 @@ export class Store {
                 this._todos.push(todo)
             }
         }
-}
+    }
+
+    static checkTodosType(todosType) {
+        if (!Store.validateTodosType(todosType)) {
+            throw new Error(`Todos type '${todosType}' is invalid`)
+        }
+    }
 
     static validateTodosType(todosType) {
-        return todosType === Store.TodosType.ALL ||
-            todosType === Store.TodosType.ACTIVE ||
-            todosType === Store.TodosType.COMPLETED;
+        return Object.values(Store.TodosType).includes(todosType)
     }
 
     addTodo(todo) {
@@ -46,6 +48,7 @@ export class Store {
     }
 
     set todosType(todosType) {
+        Store.checkTodosType(todosType)
         this._todosType = todosType
     }
 
