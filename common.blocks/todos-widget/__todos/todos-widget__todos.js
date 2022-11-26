@@ -1,0 +1,1 @@
+export const todosWidgetTodos = document.querySelector(".todos-widget__todos")

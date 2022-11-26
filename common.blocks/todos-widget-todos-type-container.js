@@ -1,0 +1,2 @@
+export const todosWidgetTodosTypeContainer = document.querySelector(".todos-widget-todos-type-container")
+export const todosWidgetTodosTypeInputs = todosWidgetTodosTypeContainer.querySelectorAll("input[name='todosType']")
