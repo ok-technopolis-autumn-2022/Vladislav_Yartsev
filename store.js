@@ -7,6 +7,7 @@ export class Store {
 
     _todosType = Store.TodosType.ALL
     _todos = []
+    _observers = []
 
     constructor({todosType, todos} = {}) {
         if (todosType) {
@@ -14,9 +15,10 @@ export class Store {
             this.todosType = todosType
         }
         if (todos) {
-            for (const todo of todos) {
-                this._todos.push(todo)
-            }
+            todos.forEach(this.addTodo)
+            // for (const todo of todos) {
+            //     this._todos.push(todo)
+            // }
         }
     }
 
@@ -30,26 +32,44 @@ export class Store {
         return Object.values(Store.TodosType).includes(todosType)
     }
 
+    subscribe(observer) {
+        this._observers.push(observer)
+        observer(this)
+    }
+
+    unsubscribe(observer) {
+        this._observers = this._observers.filter(obs => obs != observer)
+    }
+
+    notify() {
+        this._observers.forEach(obs => obs(this))
+    }
+
     addTodo(todo) {
         this._todos.push(todo)
+        this.notify()
     }
 
     toggleIsActive(key) {
         const todoToToggle = this._todos.find(todo => todo.key === key)
         todoToToggle.isActive = !todoToToggle.isActive
+        this.notify()
     }
 
     remove(key) {
         this._todos = this._todos.filter(todo => todo.key !== key)
+        this.notify()
     }
 
     removeAll(condition) {
         this._todos = this._todos.filter(condition)
+        this.notify()
     }
 
     set todosType(todosType) {
         Store.checkTodosType(todosType)
         this._todosType = todosType
+        this.notify()
     }
 
     get todosType() {
@@ -62,6 +82,7 @@ export class Store {
 
     forEachTodo(consumer) {
         this._todos.forEach(consumer)
+        this.notify()
     }
 
     get suitableTodos() {
