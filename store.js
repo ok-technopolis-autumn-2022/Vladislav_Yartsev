@@ -16,9 +16,6 @@ export class Store {
         }
         if (todos) {
             todos.forEach(this.addTodo)
-            // for (const todo of todos) {
-            //     this._todos.push(todo)
-            // }
         }
     }
 
